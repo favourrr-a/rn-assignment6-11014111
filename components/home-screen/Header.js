@@ -5,10 +5,10 @@ import { useNavigation } from '@react-navigation/native';
 import { headerStyles } from '../../styles/home-screen/headerStyles';
 
 // Assets
-import menu from '../../assets/menu-icon.png';
-import logo from '../../assets/logo-icon.png';
-import search from '../../assets/search-icon.png';
-import shoppingBag from '../../assets/shopping-bag-icon.png';
+import menu from '../../assets/icons/menu-icon.png';
+import logo from '../../assets/icons/logo-icon.png';
+import search from '../../assets/icons/search-icon.png';
+import shoppingBag from '../../assets/icons/shopping-bag-icon.png';
 
 export default function Header() {
     const navigation = useNavigation();

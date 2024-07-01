@@ -1,4 +1,7 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+// Custom components
+import Header from '../components/home-screen/Header';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -8,7 +11,7 @@ export default function HomeScreen() {
     return(
         <View style = {appStyles.container}>
             <View style = {homeScreenStyles.container}>
-                <Text> I AM THE HOME SCREEN </Text>
+                <Header/>
             </View>
         </View>
     )

@@ -1,4 +1,7 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+// Custom components
+import CartScreenHeader from '../components/cart-screen/CartScreenHeader';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -8,7 +11,7 @@ export default function CartScreen() {
     return(
         <View style = {appStyles.container}>
             <View style = {cartScreenStyles.container}>
-                <Text>I AM THE CART SCREEN</Text>
+                <CartScreenHeader/>
             </View>
         </View>
     )

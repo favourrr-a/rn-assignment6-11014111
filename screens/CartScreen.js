@@ -3,6 +3,7 @@ import { View } from 'react-native';
 // Custom components
 import CartScreenHeader from '../components/cart-screen/CartScreenHeader';
 import CheckoutHeader from '../components/cart-screen/CheckoutHeader';
+import CartItemsList from '../components/cart-screen/CartItemsList';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -14,6 +15,7 @@ export default function CartScreen() {
             <View style = {cartScreenStyles.container}>
                 <CartScreenHeader/>
                 <CheckoutHeader/>
+                <CartItemsList/>
             </View>
         </View>
     )

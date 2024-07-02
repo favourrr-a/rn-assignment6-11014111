@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import CartScreenHeader from '../components/cart-screen/CartScreenHeader';
 import CheckoutHeader from '../components/cart-screen/CheckoutHeader';
 import CartItemsList from '../components/cart-screen/CartItemsList';
+import EstTotalAndCheckout from '../components/cart-screen/EstTotalAndCheckout';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -16,6 +17,7 @@ export default function CartScreen() {
                 <CartScreenHeader/>
                 <CheckoutHeader/>
                 <CartItemsList/>
+                <EstTotalAndCheckout/>
             </View>
         </View>
     )

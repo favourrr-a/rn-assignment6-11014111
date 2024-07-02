@@ -3,6 +3,7 @@ import { View } from 'react-native';
 // Custom components
 import Header from '../components/home-screen/Header';
 import CatalogueHeader from '../components/home-screen/CatalogueHeader';
+import ProductsList from '../components/home-screen/ProductsList';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -14,6 +15,7 @@ export default function HomeScreen() {
             <View style = {homeScreenStyles.container}>
                 <Header/>
                 <CatalogueHeader/>
+                <ProductsList/>
             </View>
         </View>
     )

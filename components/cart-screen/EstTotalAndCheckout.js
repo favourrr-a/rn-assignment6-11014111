@@ -14,7 +14,7 @@ export default function EstTotalAndCheckout(){
         <View style = {estTotalAndCheckoutStyles.container}>
             <View style = {estTotalAndCheckoutStyles.estTotalContainer}>
                 <Text style = {estTotalAndCheckoutStyles.estTotalDesc}>EST. TOTAL </Text>
-                <Text style = {estTotalAndCheckoutStyles.estTotal}>${cartTotal}</Text>
+                <Text style = {estTotalAndCheckoutStyles.estTotal}>${cartTotal === null ? 0 : cartTotal}</Text>
             </View>
             <TouchableOpacity style = {estTotalAndCheckoutStyles.checkoutButtonContainer}>
                 <Image source = {shoppingBagIcon} style = {estTotalAndCheckoutStyles.checkoutButtonImage}/>

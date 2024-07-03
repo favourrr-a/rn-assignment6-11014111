@@ -42,6 +42,13 @@ The app is an online shopping application
     - <u>CartItemsList</u>: Renders a list of cart items as CartItemCards.
     - <u>EstTotalAndCheckout</u>: Shows the estimated total of all items in the cart.
 
+### Data Storage Implementation
+In this application, AsyncStorage is used to store and retrieve cart items and the total amount locally on the device. 
+
+- **Storing Items**: When an item is added to the cart, the current cart items and total amount are stored in AsyncStorage.
+- **Retrieving Items**: When the app is loaded, the stored cart items and total amount are retrieved from AsyncStorage and set in the state.
+- **Functions**: The functions `storeItem`, `getItem`, and `removeItem`, which I created in [`localStorage.js`](./local-storage/localStorage.js) are used to interact with AsyncStorage.
+
 ### Technology Stack Used
 
 - React Native

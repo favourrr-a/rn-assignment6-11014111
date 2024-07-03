@@ -1,4 +1,5 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { useCart } from '../../contexts/cartContext';
 
 // Styles
 import { productCardStyles } from '../../styles/home-screen/productCardStyles';
@@ -7,11 +8,12 @@ import { productCardStyles } from '../../styles/home-screen/productCardStyles';
 import add from '../../assets/icons/add-icon.png';
 
 export default function ProductCard({product}) {
+    const { addItemToCart } = useCart();
     return(
         <View style = {productCardStyles.container}>
             <View style = {productCardStyles.imageAndAddButtonContainer}>
                 <Image source = {product.image} style = {productCardStyles.image}/>
-                <TouchableOpacity style = {productCardStyles.addButtonContainer}>
+                <TouchableOpacity style = {productCardStyles.addButtonContainer} onPress = {() => addItemToCart(product)}>
                     <Image source = {add} style = {productCardStyles.addButton}/>
                 </TouchableOpacity>
             </View>
